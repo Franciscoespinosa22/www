@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .header {
+    background-color: #6b0d1f;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .header img {
+    height: 200px;
+    margin: 10px 20px 10px 10px;
+    float: left;
+  }
+  
+  .header span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+  }
+  
+  .principal {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .tab a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .tab a:hover {
+    color: #23527c;
+  }
+
+
+
+
+  
+  .tab.active {
+    background-color: #6b0d1f;
+    color: white;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-item {
+    margin-bottom: 20px;
+  }
+  
+  .form-item label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-item input, .form-item select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+   gap: 10px;
+    }
+    
+    .form-group {
+      flex-direction: column;
+    }
+    
+    .form-item {
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer button {
+    background-color: #337ab7;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .footer button:hover {
+    background-color: #23527c;
+  }
